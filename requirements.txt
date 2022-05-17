@@ -1,3 +1,3 @@
 django==2.1.7
 requests
-torch
+torch==1.8.0
