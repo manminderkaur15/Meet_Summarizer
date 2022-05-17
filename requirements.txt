@@ -2,6 +2,7 @@ bert-extractive-summarizer==0.10.1
 django==2.1.7
 moviepy==1.0.3
 pandas==1.2.3
+pydub==0.25.1
 requests
 SpeechRecognition==3.8.1
 tokenizers==0.11.6
