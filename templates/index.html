@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+      <title>
+       Meet Summarizer
+      </title>      
+  </head>
+<body>
+    <br>
+       <br>
+    <center>Summarize meeting minutes from the recorded meetings!</center>
+    <br>   
+      
+    <center><label for="url">Enter the URL:</label></center><br><br>
+
+    <center><input style="height:20px;width:500px;font-size:10pt;" type="url" name="url" id="url"
+       placeholder="https://example.com"
+       pattern="https://.*" size="30"
+       required></center><br> 
+    <center> OR </center><br>
+      
+   <form action="/output/" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <center><input type="file" name="video" required></center>
+          <br><br>
+          <center> <button input type="submit" value="Save" onclick = "saveInput(); location.href='{% url 'script' %}';"> Summarize </button></center><br><br><hr>
+        {% if data %}
+    
+        {{data | safe}} 
+    
+        {% endif %}
+    <br><br>
+       
+       <script language="JavaScript">
+           function saveInput() {
+                                    document.getElementById('display').innerHTML = document.getElementById("url").value;
+                                }
+  </script>
+ <center><p><span id='display'></span></p></center><br><br>
+          
+      </form>
+    </body>
+    </html>
