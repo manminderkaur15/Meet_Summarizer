@@ -201,7 +201,6 @@ msal-extensions==0.2.2
 msrest==0.6.19
 msrestazure==0.6.4
 multipledispatch==0.6.0
-murmurhash==1.0.2
 navigator-updater==0.2.1
 ndg-httpsclient==0.5.1
 oauth2client==4.1.3
