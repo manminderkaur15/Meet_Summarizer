@@ -199,7 +199,6 @@ mpmath==1.1.0
 msal==1.7.0
 msal-extensions==0.2.2
 msrest==0.6.19
-msrestazure==0.6.4
 navigator-updater==0.2.1
 ndg-httpsclient==0.5.1
 oauth2client==4.1.3
