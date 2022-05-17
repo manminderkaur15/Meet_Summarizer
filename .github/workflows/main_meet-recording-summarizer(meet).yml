@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'meet-recording-summarizer'
           slot-name: 'meet'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_242F13E76DCA416C9B2DE1F6CFFAAD25 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_48259CDDC9F54DA1BE686A9934C1C35E }}
